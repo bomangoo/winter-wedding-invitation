@@ -1,0 +1,19 @@
+body {
+    background: black;
+}
+.wrapper {
+    width: 100%;
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.snow {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 3px white;
+    z-index: 10;
+}
