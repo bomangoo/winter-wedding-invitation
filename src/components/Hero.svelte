@@ -39,11 +39,11 @@
             >
         </div>
         <div class="hero-image">
-            <img src="/public/img/main-hero.webp" alt="용연이와 보미" loading="lazy" />
+            <img src="./public/img/main-hero.webp" alt="용연이와 보미" loading="lazy" />
         </div>
 
         <div class="hero-info">
-            <h2>김용연 <img src="/public/img/couple-cookie.png" alt="커플 쿠키" /> 성보미</h2>
+            <h2>김용연 <img src="./public/img/couple-cookie.png" alt="커플 쿠키" /> 성보미</h2>
             <p>2025년 1월 18일 토요일 12시</p>
             <p>수원 권선동 성당</p>
         </div>

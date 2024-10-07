@@ -1,10 +1,10 @@
 <script lang="ts">
-    export let data;
+    export let phoneData;
     export let showModal: Boolean;
 
     let dialog: HTMLDialogElement;
 
-    $: if (dialog && showModal && data) {
+    $: if (dialog && showModal && phoneData) {
         document.body.style.overflow = 'hidden';
         dialog.showModal();
     }
@@ -19,38 +19,38 @@
     <button class="modal-bg" on:click={() => dialog.close()}></button>
     <div class="modal-window">
         <header class="modal-header">
-            <h2>{data.type}측 연락하기</h2>
+            <h2>{phoneData.type}측 연락하기</h2>
         </header>
         <ul class="modal-contents">
-            {#if data.type}
+            {#if phoneData.type}
                 <li>
-                    <div>{data.type}</div>
-                    <div>{data.name}</div>
-                    <a href={`tel:${data.phone}`}
-                        ><img src="/public/img/phone.png" alt="전화하기" /></a
+                    <div>{phoneData.type}</div>
+                    <div>{phoneData.name}</div>
+                    <a href={`tel:${phoneData.phone}`}
+                        ><img src="./public/img/phone.png" alt="전화하기" /></a
                     >
-                    <a href={`sms:${data.phone}`}
-                        ><img src="/public/img/sms.png" alt="문자하기" /></a
+                    <a href={`sms:${phoneData.phone}`}
+                        ><img src="./public/img/sms.png" alt="문자하기" /></a
                     >
                 </li>
                 <li>
-                    <div>{data.type} 아버지</div>
-                    <div>{data.father.name}</div>
-                    <a href={`tel:${data.father.phone}`}
-                        ><img src="/public/img/phone.png" alt="전화하기" /></a
+                    <div>{phoneData.type} 아버지</div>
+                    <div>{phoneData.father.name}</div>
+                    <a href={`tel:${phoneData.father.phone}`}
+                        ><img src="./public/img/phone.png" alt="전화하기" /></a
                     >
-                    <a href={`sms:${data.father.phone}`}
-                        ><img src="/public/img/sms.png" alt="문자하기" /></a
+                    <a href={`sms:${phoneData.father.phone}`}
+                        ><img src="./public/img/sms.png" alt="문자하기" /></a
                     >
                 </li>
                 <li>
-                    <div>{data.type} 어머니</div>
-                    <div>{data.mother.name}</div>
-                    <a href={`tel:${data.mother.phone}`}
-                        ><img src="/public/img/phone.png" alt="전화하기" /></a
+                    <div>{phoneData.type} 어머니</div>
+                    <div>{phoneData.mother.name}</div>
+                    <a href={`tel:${phoneData.mother.phone}`}
+                        ><img src="./public/img/phone.png" alt="전화하기" /></a
                     >
-                    <a href={`sms:${data.mother.phone}`}
-                        ><img src="/public/img/sms.png" alt="문자하기" /></a
+                    <a href={`sms:${phoneData.mother.phone}`}
+                        ><img src="./public/img/sms.png" alt="문자하기" /></a
                     >
                 </li>
             {/if}

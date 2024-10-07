@@ -62,12 +62,12 @@
     <h2>오시는 길</h2>
     <div class="map-info-wrapper">
         <div class="map-address">
-            <img src="/public/img/church.png" alt="성당 건물" />
+            <img src="./public/img/church.png" alt="성당 건물" />
             <div>
                 <h3>수원 권선동 성당</h3>
                 <p>{weddingAddress}</p>
                 <button type="button" on:click={copyAddress}>
-                    <img src="/public/img/copy-icon.png" alt="주소 복사하기" />
+                    <img src="./public/img/copy-icon.png" alt="주소 복사하기" />
                 </button>
                 <a href="tel:0312378845">031-237-8845</a>
             </div>
@@ -77,21 +77,21 @@
         <div id="map" bind:this={mapElement} on:click={onClickMap}></div>
         <div class="map-app-link">
             <button on:click={kakaonavi}>
-                <img src="/public/img/kakaonavi-icon.png" alt="" />
+                <img src="./public/img/kakaonavi-icon.png" alt="" />
                 <p>카카오 내비</p>
             </button>
             <a
                 href={`https://apis.openapi.sk.com/tmap/app/routes?appKey=${tMapKey}&goalname=권선동성당&goalx=${longitude}&goaly=${latitude}`}
             >
-                <img src="/public/img/tmap-icon.png" alt="" />
+                <img src="./public/img/tmap-icon.png" alt="" />
                 <p>T맵</p>
             </a>
             <a href={naverMapLink}>
-                <img src="/public/img/navermap-icon.png" alt="" />
+                <img src="./public/img/navermap-icon.png" alt="" />
                 <p>네이버 맵</p>
             </a>
             <a href="https://kko.to/rrMPV4So5_">
-                <img src="/public/img/kakaomap-icon.png" alt="" />
+                <img src="./public/img/kakaomap-icon.png" alt="" />
                 <p>카카오 맵</p>
             </a>
         </div>

@@ -38,13 +38,13 @@
         </div>
         <div class="arrow">
             <button on:click={prev} class={`prev ${currentSlide === 0 ? 'hide' : ''}`}>
-                <img src="/public/img/prev.png" alt="이전 이미지" />
+                <img src="./public/img/prev.png" alt="이전 이미지" />
             </button>
             <button
                 on:click={next}
                 class={`next ${currentSlide === imageLength - 1 ? 'hide' : ''}`}
             >
-                <img src="/public/img/next.png" alt="다음 이미지" />
+                <img src="./public/img/next.png" alt="다음 이미지" />
             </button>
         </div>
         <div class="dot-pagination">

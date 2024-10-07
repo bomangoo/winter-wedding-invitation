@@ -1,10 +1,10 @@
 <script lang="ts">
-    import PhoneModal from "./PhoneModal.svelte";
-    import { groom, bride } from "../contents/contact";
+    import PhoneModal from './PhoneModal.svelte';
+    import { groom, bride } from '../contents/contact';
 
     let showModal = false;
     let data = {};
-    
+
     function showPhoneModal(type: 'groom' | 'bride') {
         if (type === 'groom') {
             data = groom;
@@ -16,35 +16,35 @@
 
 <div class="introduce-area">
     <div class="poem-wrapper">
-        <img src="/public/img/line.png" alt="" />
-        물들었습니다 서로에게. <br/>
-        시나브로, 조<span>용</span>히, 진하게.<br/>
-        모자름에 연<span>연</span>하지 않았고,<br/>
-        넘치는 것은 나누었습니다.<br/>
-        그러다 <span>보</span>니, 오늘이 왔네요.<br/>
-        앞으로 펼쳐질 저희의 <span>미</span>래를<br/>
-        따뜻한 시선으로 지켜봐 주세요.<br/>
-        
-        <img src="/public/img/line2.png" alt="" />
+        <img src="./public/img/line.png" alt="" />
+        물들었습니다 서로에게. <br />
+        시나브로, 조<span>용</span>히, 진하게.<br />
+        모자름에 연<span>연</span>하지 않았고,<br />
+        넘치는 것은 나누었습니다.<br />
+        그러다 <span>보</span>니, 오늘이 왔네요.<br />
+        앞으로 펼쳐질 저희의 <span>미</span>래를<br />
+        따뜻한 시선으로 지켜봐 주세요.<br />
+
+        <img src="./public/img/line2.png" alt="" />
     </div>
 
     <ul class="groom-and-bride">
         <li>
-            <img src="/public/img/groom.png" alt="신랑 김용연" />
+            <img src="./public/img/groom.png" alt="신랑 김용연" />
             <div>
-                <p>김원종 <span></span> 김남희의 <br/>첫째 아들 <b>김용연</b></p>
+                <p>김원종 <span></span> 김남희의 <br />첫째 아들 <b>김용연</b></p>
                 <button type="button" on:click={() => showPhoneModal('groom')}>연락하기</button>
             </div>
         </li>
         <li>
-            <img src="/public/img/bride.png" alt="신부 성보미" />
+            <img src="./public/img/bride.png" alt="신부 성보미" />
             <div>
-                <p>성임식 <span></span> 박병인의 <br/>셋째 딸 <b>성보미</b></p>
+                <p>성임식 <span></span> 박병인의 <br />셋째 딸 <b>성보미</b></p>
                 <button type="button" on:click={() => showPhoneModal('bride')}>연락하기</button>
             </div>
         </li>
     </ul>
-    <PhoneModal bind:showModal data={data} />
+    <PhoneModal bind:showModal phoneData={data} />
 </div>
 
 <style>
@@ -72,15 +72,15 @@
         font-size: 1.4rem;
         font-weight: bold;
     }
-    span:nth-of-type(1), 
+    span:nth-of-type(1),
     span:nth-of-type(3) {
         color: #077d0e;
-    }    
-    span:nth-of-type(2), 
+    }
+    span:nth-of-type(2),
     span:nth-of-type(4) {
         color: #9c0d0d;
     }
-    
+
     .groom-and-bride {
         width: 100%;
         padding-top: 2rem;

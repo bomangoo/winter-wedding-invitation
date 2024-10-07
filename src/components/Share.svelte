@@ -18,11 +18,11 @@
 <div class="share-area">
     <div>
         <button type="button" on:click={kakaoShare}>
-            <img src="/public/img/kakao-icon.png" alt="카카오톡으로 공유하기" />
+            <img src="./public/img/kakao-icon.png" alt="카카오톡으로 공유하기" />
             <p>카카오톡 공유</p>
         </button>
         <button type="button" on:click={linkShare}>
-            <img src="/public/img/link-share-icon.png" alt="링크 복사하기" />
+            <img src="./public/img/link-share-icon.png" alt="링크 복사하기" />
             <p>링크 복사</p>
         </button>
     </div>

@@ -15,7 +15,7 @@
 </script>
 
 <div class="bank-area">
-    <img src="/public/img/bell.png" alt="크리스마스 종" />
+    <img src="./public/img/bell.png" alt="크리스마스 종" />
     <h2>마음 전하실 곳</h2>
     <p>참석이 어려우신 분들을 위해 계좌번호를 기재했습니다.</p>
     <p>축하해 주시는 따뜻한 마음에 감사드립니다.</p>
