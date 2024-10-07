@@ -24,6 +24,8 @@
         그러다 <span>보</span>니, 오늘이 왔네요.<br/>
         앞으로 펼쳐질 저희의 <span>미</span>래를<br/>
         따뜻한 시선으로 지켜봐 주세요.<br/>
+        
+        <img src="/public/img/line2.png" alt="" />
     </div>
 
     <ul class="groom-and-bride">
@@ -60,6 +62,11 @@
         width: 35%;
         max-width: 9rem;
         margin: 1rem auto;
+    }
+    .poem-wrapper > img:nth-of-type(2) {
+        width: 50%;
+        max-width: 100%;
+        margin-top: 1.8rem;
     }
     .poem-wrapper > span {
         font-size: 1.4rem;
