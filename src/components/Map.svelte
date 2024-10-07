@@ -72,6 +72,8 @@
                 <a href="tel:0312378845">031-237-8845</a>
             </div>
         </div>
+        <!-- svelte-ignore a11y-no-static-element-interactions -->
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div id="map" bind:this={mapElement} on:click={onClickMap}></div>
         <div class="map-app-link">
             <button on:click={kakaonavi}>
