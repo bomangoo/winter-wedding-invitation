@@ -16,7 +16,6 @@
         if (!music) return;
         if (!volumeOn) {
             music.play();
-            console.log('play');
             volumeOn = true;
         } else {
             music.pause();
@@ -28,12 +27,12 @@
 <main>
     <button type="button" on:click={handleVolume}>
         <img
-            src="./public/img/volume-on.png"
+            src="./img/volume-on.png"
             style="opacity: {volumeOn ? 1 : 0}; transition: opacity 0.5s ease;"
             alt="배경 음악 켜기"
         />
         <img
-            src="./public/img/volume-off.png"
+            src="./img/volume-off.png"
             style="opacity: {volumeOn ? 0 : 1}; transition: opacity 0.5s ease;"
             alt="배경 음악 끄기"
         />
@@ -49,7 +48,7 @@
     <Share />
 
     <div class="copyright">Copyright 2024. 보망고 All rights reserved</div>
-    <audio id="main-bg" preload="none" loop src="./public/music/christmas-bg.mp3" />
+    <audio id="main-bg" preload="none" loop src="./music/christmas-bg.mp3" />
 </main>
 <div id="snowArea"></div>
 

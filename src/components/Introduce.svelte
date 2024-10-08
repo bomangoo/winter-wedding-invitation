@@ -16,7 +16,7 @@
 
 <div class="introduce-area">
     <div class="poem-wrapper">
-        <img src="./public/img/line.png" alt="" />
+        <img src="./img/line.png" alt="" />
         물들었습니다 서로에게. <br />
         시나브로, 조<span>용</span>히, 진하게.<br />
         모자름에 연<span>연</span>하지 않았고,<br />
@@ -25,19 +25,19 @@
         앞으로 펼쳐질 저희의 <span>미</span>래를<br />
         따뜻한 시선으로 지켜봐 주세요.<br />
 
-        <img src="./public/img/line2.png" alt="" />
+        <img src="./img/line2.png" alt="" />
     </div>
 
     <ul class="groom-and-bride">
         <li>
-            <img src="./public/img/groom.png" alt="신랑 김용연" />
+            <img src="./img/groom.png" alt="신랑 김용연" />
             <div>
                 <p>김원종 <span></span> 김남희의 <br />첫째 아들 <b>김용연</b></p>
                 <button type="button" on:click={() => showPhoneModal('groom')}>연락하기</button>
             </div>
         </li>
         <li>
-            <img src="./public/img/bride.png" alt="신부 성보미" />
+            <img src="./img/bride.png" alt="신부 성보미" />
             <div>
                 <p>성임식 <span></span> 박병인의 <br />셋째 딸 <b>성보미</b></p>
                 <button type="button" on:click={() => showPhoneModal('bride')}>연락하기</button>

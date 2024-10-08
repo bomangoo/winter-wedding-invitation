@@ -66,10 +66,7 @@
                             복사
                         </button>
                         <a class="kakao-pay" href={bankData.kakaoPay}>
-                            <img
-                                src="./public/img/kakao-pay-icon.png"
-                                alt="카카오페이로 송금하기"
-                            />
+                            <img src="./img/kakao-pay-icon.png" alt="카카오페이로 송금하기" />
                         </a>
                     </div>
                 </li>

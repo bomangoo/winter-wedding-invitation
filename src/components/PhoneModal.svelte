@@ -27,30 +27,29 @@
                     <div>{phoneData.type}</div>
                     <div>{phoneData.name}</div>
                     <a href={`tel:${phoneData.phone}`}
-                        ><img src="./public/img/phone.png" alt="전화하기" /></a
+                        ><img src="./img/phone.png" alt="전화하기" /></a
                     >
-                    <a href={`sms:${phoneData.phone}`}
-                        ><img src="./public/img/sms.png" alt="문자하기" /></a
+                    <a href={`sms:${phoneData.phone}`}><img src="./img/sms.png" alt="문자하기" /></a
                     >
                 </li>
                 <li>
                     <div>{phoneData.type} 아버지</div>
                     <div>{phoneData.father.name}</div>
                     <a href={`tel:${phoneData.father.phone}`}
-                        ><img src="./public/img/phone.png" alt="전화하기" /></a
+                        ><img src="./img/phone.png" alt="전화하기" /></a
                     >
                     <a href={`sms:${phoneData.father.phone}`}
-                        ><img src="./public/img/sms.png" alt="문자하기" /></a
+                        ><img src="./img/sms.png" alt="문자하기" /></a
                     >
                 </li>
                 <li>
                     <div>{phoneData.type} 어머니</div>
                     <div>{phoneData.mother.name}</div>
                     <a href={`tel:${phoneData.mother.phone}`}
-                        ><img src="./public/img/phone.png" alt="전화하기" /></a
+                        ><img src="./img/phone.png" alt="전화하기" /></a
                     >
                     <a href={`sms:${phoneData.mother.phone}`}
-                        ><img src="./public/img/sms.png" alt="문자하기" /></a
+                        ><img src="./img/sms.png" alt="문자하기" /></a
                     >
                 </li>
             {/if}
